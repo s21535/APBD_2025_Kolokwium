@@ -9,5 +9,5 @@ public class Concert
     public DateTime Date { get; set; }
     public int AvailableTickets { get; set; }
     
-    public ICollection<TicketConcert> TicketConcerts { get; set; } = new List<TicketConcert>();
+    public ICollection<TicketConcert> TicketConcerts { get; set; } = new HashSet<TicketConcert>();
 }

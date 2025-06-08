@@ -13,7 +13,7 @@ public class SqlPurchasesRepository : IPurchaseRepository
         _dbContext = dbContext;
     }
     
-    public async Task<ICollection<PurchasedTicket>> GetOrdersAsync()
+    public async Task<ICollection<PurchasedTicket>> GetOrdersAsync(string? customerLastName)
     {
         return await _dbContext.PurchasedTickets.ToListAsync();
     }

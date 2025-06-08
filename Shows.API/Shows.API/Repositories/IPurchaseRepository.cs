@@ -4,5 +4,5 @@ namespace Shows.API.Repositories;
 
 public interface IPurchaseRepository
 {
-    Task<ICollection<PurchasedTicket>> GetOrdersAsync();
+    Task<ICollection<PurchasedTicket>> GetOrdersAsync(string? customerLastName);
 }

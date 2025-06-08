@@ -13,6 +13,12 @@ namespace Shows.API.Controllers
         {
             _purchaseRepository = purchaseRepository;
         }
-        
+
+        [HttpGet]
+        public async Task<IActionResult> GetPurchases(string? customerLastName = null)
+        {
+            var purchases = await _purchaseRepository.GetOrdersAsync(customerLastName);
+            return Ok(purchases);
+        }
     }
 }

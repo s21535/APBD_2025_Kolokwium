@@ -8,10 +8,10 @@ namespace Shows.API.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        private readonly IOrderRepository _orderRepository;
-        public CustomersController(IOrderRepository orderRepository)
+        private readonly IPurchaseRepository _purchaseRepository;
+        public CustomersController(IPurchaseRepository purchaseRepository)
         {
-            _orderRepository = orderRepository;
+            _purchaseRepository = purchaseRepository;
         }
         
     }

@@ -12,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
-builder.Services.AddScoped<IOrderRepository, SQLOrdersRepository>();
+builder.Services.AddScoped<IPurchaseRepository, SqlPurchasesRepository>();
 
 var app = builder.Build();
 

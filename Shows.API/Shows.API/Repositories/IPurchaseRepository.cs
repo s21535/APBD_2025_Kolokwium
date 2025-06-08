@@ -2,7 +2,7 @@
 
 namespace Shows.API.Repositories;
 
-public interface IOrderRepository
+public interface IPurchaseRepository
 {
     Task<ICollection<PurchasedTicket>> GetOrdersAsync();
 }

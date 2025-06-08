@@ -4,11 +4,11 @@ using Shows.API.Models.Domain;
 
 namespace Shows.API.Repositories;
 
-public class SQLOrdersRepository : IOrderRepository
+public class SqlPurchasesRepository : IPurchaseRepository
 {
     private readonly DatabaseContext _dbContext;
     
-    public SQLOrdersRepository(DatabaseContext dbContext)
+    public SqlPurchasesRepository(DatabaseContext dbContext)
     {
         _dbContext = dbContext;
     }
